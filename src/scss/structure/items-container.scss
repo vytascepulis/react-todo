@@ -1,0 +1,23 @@
+.items-container {
+  margin-top: 20px;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  li {
+    &:hover > span {
+      opacity: 1;
+    }
+    span {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      opacity: 0;
+      transition: 0.1s opacity linear;
+      cursor: pointer;
+      svg {
+        height: 15px;
+        color: rgb(219, 0, 0);
+      }
+    }
+  }
+}
