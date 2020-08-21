@@ -6,7 +6,10 @@ const InputForm = (props) => {
     e.preventDefault();
     const inputField = e.target.elements[0];
     if (inputField.value.length > 0) {
-      props.addItem({ id: props.count, text: inputField.value });
+      props.addItem({
+        id: props.count,
+        text: inputField.value,
+      });
       inputField.value = "";
     } else {
       inputField.classList.add("error-field");
